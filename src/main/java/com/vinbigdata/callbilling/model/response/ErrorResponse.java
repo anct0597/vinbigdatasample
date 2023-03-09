@@ -22,4 +22,9 @@ public class ErrorResponse {
     private String id = RandomStringUtils.randomAlphabetic(6);
     private String errorCode;
     private String message;
+    public ErrorResponse(String errorCode, String message) {
+        this.errorCode = errorCode;
+        this.message = message;
+    }
+
 }

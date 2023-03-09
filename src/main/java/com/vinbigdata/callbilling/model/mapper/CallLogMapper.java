@@ -3,6 +3,7 @@ package com.vinbigdata.callbilling.model.mapper;
 import com.vinbigdata.callbilling.model.entity.CallLog;
 import com.vinbigdata.callbilling.model.request.CallLogRequest;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 /**
  * author: anct
@@ -11,6 +12,6 @@ import org.mapstruct.Mapper;
  */
 @Mapper
 public interface CallLogMapper {
-
-    CallLog toEntity(CallLogRequest request);
+    @Mapping(source = "request.callDuration", target = "duration")
+    CallLog toEntity(String username, CallLogRequest request);
 }

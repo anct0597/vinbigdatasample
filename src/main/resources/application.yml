@@ -17,7 +17,7 @@ spring:
 
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.210.39.69:3306/dfile?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8
+    url: jdbc:mysql://10.210.39.69:3306/test_v?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8
     username: dfile
     password: Dfile@1234
     hikari:
@@ -30,10 +30,10 @@ spring:
       leakDetectionThreshold: 10000
       poolName: default-pool
 
-logging:
-  config: config/log4j2.yml
-  org:
-    hibernate:
-      SQL: DEBUG
-  level:
-    org.springframework.security: DEBUG
+#logging:
+#  config: src/main/resources/log4j2.yml
+#  org:
+#    hibernate:
+#      SQL: INFO
+#  level:
+#    org.springframework.security: DEBUG

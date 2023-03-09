@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @RequiredArgsConstructor
-@EnableJpaAuditing(auditorAwareRef = "auditorAware")
+@EnableJpaAuditing
 @EntityScan(basePackages = "com.vinbigdata.callbilling.model")
 @EnableJpaRepositories(basePackages = "com.vinbigdata.callbilling.repository")
 public class PersistenceConfig {

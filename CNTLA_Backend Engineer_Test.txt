@@ -8,6 +8,10 @@ projects:
 Bạn được yêu cầu xây dựng chương trình tính tiền một người dùng (user) phải trả. Cách tính tiền cước như sau:
 * Mỗi cuộc gọi được chia thành các block 30s. Số giây lẻ được tính thành 1 block. Ví dụ: cuộc gọi 6s được tính là 1 block. Cuộc gọi 36s được tính là 2 block
 * Số tiền cước mà người dùng phải trả là tổng số block họ đã gọi. Để đơn giản, chương trình không cần chia theo tháng, năm, mà chỉ cần đưa ra số tổng.
+
+
+
+
 ### API ghi nhận cuộc gọi
 API này sẽ được gọi sau khi caller kết thúc cuộc gọi. Thông tin bao gồm:
 * `username`: một chuỗi ngắn hơn 32 ký tự, đặc trưng cho từng users. `username` được truyền tại path của request

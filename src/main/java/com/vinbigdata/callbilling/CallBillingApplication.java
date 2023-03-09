@@ -12,7 +12,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Slf4j
 @SpringBootApplication(scanBasePackages = "com.vinbigdata.callbilling")
 public class CallBillingApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(CallBillingApplication.class, args);
     }
