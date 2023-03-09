@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.210.39.69:3306/dfile?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8
+    username: dfile
+    password: Dfile@1234
+    hikari:
+      connectionTimeout: 30000
+      minimumIdle: 1
+      maximumPoolSize: 50
+      idleTimeout: 600000
+      maxLifetime: 1800000
+      autoCommit: true
+      leakDetectionThreshold: 10000
+      poolName: default-pool
+
+logging:
+  config: config/log4j2.yml
+  org:
+    hibernate:
+      SQL: DEBUG
+  level:
+    org.springframework.security: DEBUG
